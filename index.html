@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Exams - Train like it's official. Save like it's not.</title>
+    <meta name="description" content="Blue Exams offers realistic EA mock exams with built-in features. Practice up to 15 times for only R$200. Don't waste your official mock exams.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="logo.svg" alt="Blue Exams Logo" class="header-logo">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-primary" onclick="handleStartPractice()">
+                        <i class="fas fa-play"></i>
+                        Start Your Practice
+                    </button>
+                </div>
+            </div>
+            <div class="slogan-section">
+                <p class="slogan">Don't waste your official mock exams</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h1 class="intro-title">Train like it's official. Save like it's not.</h1>
+                    <p class="intro-description">
+                        Blue Exams is a platform that offers practice exams that replicate the official Executive Assessment (EA) experience. 
+                        With features like pause, calculator, and question review, as well as detailed analysis, you can practice up to 
+                        15 times, saving you money on official tests.
+                    </p>
+                    <div class="intro-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Mock Tests</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">R$200</div>
+                            <div class="stat-label">Total Cost</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">EA-like Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-visual">
+                    <div class="exam-preview">
+                        <div class="exam-header">
+                            <div class="exam-title">Executive Assessment Practice</div>
+                            <div class="exam-timer">45:30</div>
+                        </div>
+                        <div class="exam-question">
+                            <div class="question-number">Question 12 of 40</div>
+                            <div class="question-text">
+                                If the profit margin increased by 15% and sales volume...
+                            </div>
+                            <div class="question-options">
+                                <div class="option">A) 25%</div>
+                                <div class="option active">B) 30%</div>
+                                <div class="option">C) 35%</div>
+                            </div>
+                        </div>
+                        <div class="exam-controls">
+                            <button class="control-btn"><i class="fas fa-pause"></i></button>
+                            <button class="control-btn"><i class="fas fa-calculator"></i></button>
+                            <button class="control-btn"><i class="fas fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Blue Exams?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="feature-title">Realistic EA-like Mock Exams</h3>
+                    <p class="feature-description">Experience the exact format, timing, and difficulty of official Executive Assessment tests</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="feature-title">Built-in Features</h3>
+                    <p class="feature-description">Pause, calculator, and question review - just like the real exam environment</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="feature-title">Up to 15 Mock Tests</h3>
+                    <p class="feature-description">Only R$200 (~$40) for comprehensive practice - fraction of official test costs</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="feature-title">Detailed Analytics</h3>
+                    <p class="feature-description">In-depth performance insights with explanations for each question</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Start Your Journey Today</h2>
+                <p class="cta-description">
+                    Take your EA preparation to the next level with Blue Exams. Train smarter, not harder.
+                </p>
+                <div class="cta-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Instant access to all 15 mock tests</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Detailed performance analytics</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Save hundreds on official test fees</span>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <button class="btn-cta" onclick="handleGetStarted()">
+                        <i class="fas fa-rocket"></i>
+                        Get Started Now
+                    </button>
+                    <div class="cta-price">
+                        <span class="price-label">One-time payment</span>
+                        <span class="price-amount">R$200 (~$40)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="Blue Exams" class="footer-logo">
+                    <p class="footer-tagline">Professional EA mock exam training</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:contact@blueexams.com">contact@blueexams.com</a>
+                        <a href="mailto:support@blueexams.com">support@blueexams.com</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#refund">Refund Policy</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blue Exams. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
