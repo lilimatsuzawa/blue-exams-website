@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .logo-section {
@@ -44,7 +44,7 @@ body {
 }
 
 .header-logo {
-    height: 40px;
+    height: 80px;
     width: auto;
 }
 
@@ -75,15 +75,18 @@ body {
 }
 
 .slogan-section {
+    flex: 1;
     text-align: center;
+    margin: 0 2rem;
 }
 
 .slogan {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #61bcef;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: fadeInUp 1s ease-out;
+    margin: 0;
 }
 
 /* Introduction Section */
